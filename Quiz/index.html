@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Js</title>
+</head>
+<body class="wrong">
+    <header class="header">
+        <h1>
+            Quiz JS
+        </h1>
+    </header>
+    <div class="wrapper">
+        <div class="questions-wrapper">
+            <div class="question">
+                <p id="questionP"></p>
+            </div>
+            <div class="answers-wrapper">
+                <button onclick="IsCorrectAnswer(this)" class="answer">Odgvovor 1</button>
+                <button onclick="IsCorrectAnswer(this)" class="answer">Odgvovor 2</button>
+            </div>
+            <div class="answers-wrapper">
+                <button onclick="IsCorrectAnswer(this)" class="answer">Odgvovor 3</button>
+                <button onclick="IsCorrectAnswer(this)" class="answer">Odgvovor 4</button>
+            </div>
+            <div>
+                <button  id="next-btn"  class="btn">
+                    Next
+                </button>
+            </div>
+        </div>
+        <div>
+            <button id="start-btn" onclick="StartQuiz()" class="btn">Start</button>
+        </div>
+    </div>
+    <div id="result">
+        <p class="number">
+            result
+        </p>
+        <p class="message">
+            not bad
+        </p>
+        <div class="result-button">
+            <button id="try-again" onclick="StartQuiz()" class="btn">Try again</button>
+        </div>
+    </div>
+    <script src="java.js"></script>
+
+</body>
+</html>
